@@ -10,5 +10,8 @@
     "npm",
     "package",
     "carameldrop"
-  ]
+  ],
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
 }

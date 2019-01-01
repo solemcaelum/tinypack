@@ -1,0 +1,14 @@
+{
+  "name": "@carameldrop/tinypack",
+  "version": "2.0.0",
+  "description": "Things I use.",
+  "license": "MIT",
+  "repository": "solemcaelum/tinypack",
+  "main": "index.js",
+  "keywords": [
+    "tiny",
+    "npm",
+    "package",
+    "carameldrop"
+  ]
+}

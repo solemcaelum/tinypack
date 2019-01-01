@@ -6,7 +6,7 @@ exports.setToken = function(data) {
   token = data;
 }
 
-exports.startBot = function{
+exports.startBot = function() {
   const client = new Client();
 
   client.on('ready', () => {

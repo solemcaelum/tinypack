@@ -1,21 +1,36 @@
 var exports = module.exports = {};
-const {Client, Attachment} = require('discord.js');
-var token = "";
-
-exports.setToken = function(data) {
-  token = data;
+const discordModule = require("./plugins/discordbot.js");
+var disc, tele = false;
+var discordToken = "";
+var telegramToken = "";
+var playing, type, url = "";
+exports.bots = function(discord, telegram) {
+  if (discord == true) {
+    disc = true;
+  }
+  if (telegram == true) {
+    tele = true;
+  }
 }
-
-exports.startBot = function(string, activityType, url) {
-  const client = new Client();
-
-  client.on('ready', () => {
-          console.log('[CLIENT] Ready!');
-          if (activityType == "STREAMING")
-            client.user.setActivity(string, { type: activityType, url});
-          else
-            client.user.setActivity(string, { type: activityType, url});
-  });
-
-  client.login(token);
+exports.setDiscordToken = function(data){
+  discordToken = data;
+}
+exports.setTelegramToken = function(data){
+  telegramToken = data;
+}
+exports.setDiscordData = function(play, ty, ur){
+  playing = play;
+  ty = type;
+  if (ur){
+    url = ur;
+  }
+}
+exports.instanceBots = function(){
+  if (disc == true){
+    discordModule.setToken(discordToken);
+    discordModule.startBot(playing, type, url);
+  }
+  if (tele == true){
+    console.log("Telegram placeholder.");
+  }
 }

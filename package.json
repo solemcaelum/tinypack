@@ -12,6 +12,7 @@
     "carameldrop"
   ],
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.4.2",
+    "lowdb": "^1.0.0"
   }
 }

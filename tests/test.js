@@ -13,7 +13,7 @@ DISCORD AND TELEGRAM KEYS LEFT IN HERE ARE INVALID. PLEASE REPLACE WITH YOUR OWN
 */
 const tinypack = require("../");
 tinypack.bots(true,true);
-tinypack.setDiscordToken("NTI5NzUwOTUxODAwNjAyNjM3.Dw1Yvw.57LdJyB2Y0U5NBOdSZ3u1G6yNyQ");
-tinypack.setTelegramToken("774316097:AAFN6ayj4VcpmydgFs7Iuc9D8Hiegw-egyE");
+tinypack.setDiscordToken("INSERT-DISCORD-TOKEN");
+tinypack.setTelegramToken("INSERT-DISCORD-TOKEN");
 tinypack.setDiscordData("my flank~", "STREAMING", "https://twitch.tv/fillyanon");
 tinypack.instanceBots();

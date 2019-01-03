@@ -1,5 +1,6 @@
 var exports = module.exports = {};
-const discordModule = require("./plugins/discordbot.js");
+const discordModule = require("./modules/discordbot.js");
+const telegramModule = require("./modules/telegrambot.js");
 var disc, tele = false;
 var discordToken = "";
 var telegramToken = "";
@@ -31,6 +32,7 @@ exports.instanceBots = function(){
     discordModule.startBot(playing, type, url);
   }
   if (tele == true){
-    console.log("Telegram placeholder.");
+    telegramModule.setToken(telegramToken);
+    telegramModule.startBot();
   }
 }

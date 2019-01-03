@@ -2,7 +2,7 @@
 
 [![](https://img.shields.io/npm/v/@carameldrop/tinypack.svg)](https://www.npmjs.com/package/@carameldrop/tinypack)
 [![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@carameldrop/tinypack.svg)](https://www.npmjs.com/package/@carameldrop/tinypack)
-[![](https://img.shields.io/website-up-down-green-red/https/carm.ml.svg?label=Developer's Website)](https://carm.ml/)
+[![](https://img.shields.io/website-up-down-green-red/https/carm.ml.svg?label=Developer%20Website)](https://carm.ml/)
 
 A collection of all the little modules I use.
 
